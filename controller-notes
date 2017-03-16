@@ -1,0 +1,24 @@
+var app = angular.module("name", ["dependencies"])
+
+app.controller("name", function(){
+    this.name = 3213213;
+})
+
+
+controllerlar ilk yazıldığı zaman instance alınmaz 
+
+ng-controller = "somecontroler" directivi kullanıldığı zaman şunlar olur
+
+1. blok için memory alanı açar
+2. yeni bir execution-context açılır
+3. $scope bu contextin kendisidir ve contextin elemanlarına ulaşır
+4. controller tam bu esnada çalışır. !!!!!!!!!!!!!!
+
+
+angular js controller ve ng-controller = "somecontroller" ı nasıl bağlar
+
+angular js $scope objesini oluşturur ve o scope objesini controller()
+methodu içine merge eder
+ 
+bu aşamadan sonra $scope objesi controller ve template arasında bir bağlayıcı görev görür
+

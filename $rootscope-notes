@@ -1,0 +1,7 @@
+ng-app directivi kullanıldığı zaman module instansı alınır ve angular 
+
+1. $rootScope objesini oluşturur
+2. $rootScope bütün elementlerde avaliable olur 
+3. .run("", function($rootScope )) module objesinin controlleridir chaining yapılabilir
+4. eğer $rootScope modify edilirse kullanıldığı heryer update edilir 
+5. $rootScope kullanmak sadece data için kullanılmalıdır ve son seçenek olmalıdır

@@ -1,0 +1,20 @@
+$scope controller ve view arasındaki objedir
+
+1. eğer controller viewe veri göndermek isterse ilk önce $scope objesine göndermelidir
+2. aynı şekilde eğer view controllera veri göndermek isterse ilk önce $scopa gönderir 
+
+controller("", function($scope){
+
+})
+şeklinde tanımlanır
+
+$scope.name = somevalue şeklinde tanımlama yapılır viewdaki
+karşılığı {{name}} dir.
+
+
+$scope inheritance
+
+ng-controller altında başka ng-controllerlar olabilir alttaki
+controllerlar üsttekinin $scope objesine ulaşabilir 
+
+
